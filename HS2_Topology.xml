@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+<!--
+#########################
+###      HEADER       ###
+#########################
+-->
+
+	<!-- General New Beyond Systems -->
+	<SystemMap UNID="&HS2_smNewBeyondExtension;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="HS2_NewBeyondExtension">
+			<!-- Eridani Segment -->
+			<Stargate from="HS2_NBF1:HS2_NBF2"	to="HS2_NBF2:HS2_NBF1"/>
+			<Stargate from="HS2_NBF2:HS2_NBF3"	to="HS2_NBF3:HS2_NBF2"/>
+			<Stargate from="HS2_NBF3:HS2_NBF4"	to="HS2_NBF4:HS2_NBF3"/>
+			<Stargate from="HS2_NBF4:HS2_NBF5"	to="HS2_NBF5:HS2_NBF4"/>
+			<Stargate from="HS2_NBF5:HS2_NBF6"	to="HS2_NBF6:HS2_NBF5"/>
+			<Stargate from="HS2_NBF5:HS2_NBF5A"	to="HS2_NBF5A:HS2_NBF5"/>
+			<!-- Rigel Segment -->
+			<Stargate from="HS2_NBF7:HS2_NBF8"		to="HS2_NBF8:HS2_NBF7"/>
+			<Stargate from="HS2_NBF8:HS2_NBF9"		to="HS2_NBF9:HS2_NBF8"/>
+			<Stargate from="HS2_NBF9:HS2_NBF10"		to="HS2_NBF10:HS2_NBF9"/>
+			<Stargate from="HS2_NBF10:HS2_NBF11"	to="HS2_NBF11:HS2_NBF10"/>
+			<Stargate from="HS2_NBF7:HS2_NBF8A"		to="HS2_NBF8A:HS2_NBF7"/>
+			<Stargate from="HS2_NBF8:HS2_NBF9A1"	to="HS2_NBF9A1:HS2_NBF8"/>
+			<Stargate from="HS2_NBF9A2:HS2_NBF9A1"	to="HS2_NBF9A1:HS2_NBF9A2"/>
+			<Stargate from="HS2_NBF9A2:HS2_NBF10"	to="HS2_NBF10:HS2_NBF9A2"/>
+			<!-- connections to mainline topology -->
+				<!-- Eridani Segment -->
+			<Stargate from="HS2_NBF2:C1"	to="C1:HS2_NBF2"/>
+			<Stargate from="HS2_NBF4:C3"	to="C3:HS2_NBF4"/>
+			<Stargate from="HS2_NBF6:C3A"	to="C3A:HS2_NBF6"/>
+				<!-- Rigel Segment -->
+			<Stargate from="HS2_NBF7:C3A"	to="C3A:HS2_NBF7"/>
+			<Stargate from="HS2_NBF11:C4"	to="C4:HS2_NBF11"/>
+		</NodeGroup>
+		<!-- Frontier-side -->
+		<Node ID="HS2_NBF1" x="7" y="-157"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF1"
+				level=			"1"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF2" x="20" y="-168"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF2"
+				level=			"1"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF3" x="39" y="-183"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF3"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF4" x="62" y="-203"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF4"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF5" x="92" y="-222"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF5"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF5A" x="98" y="-213"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF5A"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF6" x="124" y="-235"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF6"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF7" x="160" y="-240"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF7"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF8" x="180" y="-224"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF8"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF8A" x="182" y="-250"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF8A"
+				level=			"2"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF9" x="220" y="-220"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF9"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF9A1" x="210" y="-239"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF9A1"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF9A2" x="239" y="-228"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF9A2"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF10" x="251" y="-211"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF10"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_NBF11" x="275" y="-192"	initialState="positionKnown">
+			<System 
+				name=			"HS2_NBF11"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+	</SystemMap>
+	<!-- General Ungoverned Territories Systems -->
+	<SystemMap UNID="&HS2_smUngovernedExtension;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="HS2_UngovernedExtension">
+			<!-- connections between our own systems -->
+			<Stargate from="HS2_UT1:edgeward"	to="HS2_UT2:coreward"/>
+			<!-- connect to mainline topology here -->
+			<Stargate from="HS2_UT1:coreward"	to="C5A:stubward"/>
+		</NodeGroup>
+
+		<Node ID="HS2_UT1" x="222" y="110"	initialState="positionKnown">
+			<System 
+				name=			"Ealty"
+				level=			"4"
+				attributes=		"humanSpace, ungoverned"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+
+		<Node ID="HS2_UT2" x="190" y="145"	initialState="positionKnown">
+			<System 
+				name=			"E'Modie"
+				level=			"5"
+				attributes=		"humanSpace, ungoverned, ELT"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+	</SystemMap>
+	<!-- General Outer Realm Systems -->
+	<SystemMap UNID="&HS2_smOuterRealmExtension;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="HS2_OuterRealmExtension">
+			<!-- connections between our own systems -->
+			<Stargate from="HS2_OR1:edgeward"	to="HS2_OR2:coreward"/>
+			<!-- connect to mainline topology here -->
+			<Stargate from="HS2_OR1:coreward"	to="C5A:stubward"/>
+		</NodeGroup>
+
+		<Node ID="HS2_OR1" x="222" y="110"	initialState="positionKnown">
+			<System 
+				name=			"Ealty"
+				level=			"4"
+				attributes=		"humanSpace, outerRealm"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+
+		<Node ID="HS2_OR2" x="190" y="145"	initialState="positionKnown">
+			<System 
+				name=			"E'Modie"
+				level=			"5"
+				attributes=		"humanSpace, outerRealm"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+	</SystemMap>
+<!--
+#########################
+###      FACTION SPACE       ###
+#########################
+-->
+	<!-- Charon-infested CW Space Systems -->
+	<SystemMap UNID="&HS2_smCharonCWSpace;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="HS2_CharonCWSpace">
+			<!-- connections between our own systems -->
+			<Stargate from="HS2_Charon1:HS2_Charon2"	to="HS2_Charon2:HS2_Charon1"/>
+			<Stargate from="HS2_Charon2:HS2_Charon3"	to="HS2_Charon3:HS2_Charon2"/>
+			<Stargate from="HS2_Charon3:HS2_Charon4"	to="HS2_Charon4:HS2_Charon3"/>
+			<Stargate from="HS2_Charon4:HS2_Charon5"	to="HS2_Charon5:HS2_Charon4"/>
+			<Stargate from="HS2_Charon5:HS2_Charon6"	to="HS2_Charon6:HS2_Charon5"/>
+			<!-- connect to secret charon system -->
+			<StargateTable>
+				<Stargate chance="20" from="HS2_Charon:HS2_Charon1" to="HS2_Charon1:HS2_Charon"/>
+				<Stargate chance="20" from="HS2_Charon:HS2_Charon2" to="HS2_Charon2:HS2_Charon"/>
+				<Stargate chance="20" from="HS2_Charon:HS2_Charon3" to="HS2_Charon3:HS2_Charon"/>
+				<Stargate chance="20" from="HS2_Charon:HS2_Charon4" to="HS2_Charon4:HS2_Charon"/>
+				<Stargate chance="20" from="HS2_Charon:HS2_Charon5" to="HS2_Charon5:HS2_Charon"/>
+			</StargateTable>
+			<!-- connect to mainline topology here -->
+			<Stargate from="HS2_Charon1:C4"		to="C4:HS2_Charon1"/>
+			<Stargate from="HS2_Charon4:C4A"	to="C4A:HS2_Charon4"/>
+			<Stargate from="HS2_Charon5:CP"		to="CP:HS2_Charon4"/>
+		</NodeGroup>
+
+		<!-- A (inner) segment -->
+
+		<Node ID="HS2_Charon1" x="287" y="-169"	initialState="positionKnown">
+			<System 
+				name=			"Charon1"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Charon2" x="295" y="-138"	initialState="positionKnown">
+			<System 
+				name=			"Charon2"
+				level=			"4"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Charon3" x="301" y="-106"	initialState="positionKnown">
+			<System 
+				name=			"Charon3"
+				level=			"4"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Charon4" x="298" y="-77"	initialState="positionKnown">
+			<System 
+				name=			"Charon4"
+				level=			"3"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Charon5" x="290" y="-46"	initialState="positionKnown">
+			<System 
+				name=			"Charon5"
+				level=			"4"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Charon6" x="278" y="-24"	initialState="positionKnown">
+			<System 
+				name=			"Charon6"
+				level=			"4"
+				attributes=		"humanSpace, newBeyond"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Charon" x="315" y="-108">
+			<System 
+				name=			"Charon"
+				level=			"4"
+				attributes=		"humanSpace, newBeyond, charon"
+				>
+				<System UNID="&ssCharonPirateFortress;"/>
+			</System>
+		</Node>
+		
+	</SystemMap>
+	<!-- Sung Space Systems -->
+	<SystemMap UNID="&HS2_smSungSpace;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="HS2_SungSpace">
+			<!-- connections between our own systems -->
+			;A segment
+			<Stargate from="HS2_SungA1:HS2_SungA2"	to="HS2_SungA2:HS2_SungA1"/>
+			<Stargate from="HS2_SungA2:HS2_SungA3"	to="HS2_SungA3:HS2_SungA2"/>
+			<Stargate from="HS2_SungA3:HS2_SungA4"	to="HS2_SungA4:HS2_SungA3"/>
+			<Stargate from="HS2_SungA4:HS2_SungA5"	to="HS2_SungA5:HS2_SungA4"/>
+			<Stargate from="HS2_SungA5:HS2_SungA6"	to="HS2_SungA6:HS2_SungA5"/>
+			;B segment
+			<Stargate from="HS2_SungB1:HS2_SungB2"	to="HS2_SungB2:HS2_SungB1"/>
+			<Stargate from="HS2_SungB2:HS2_SungB3"	to="HS2_SungB3:HS2_SungB2"/>
+			<Stargate from="HS2_SungB3:HS2_SungB4"	to="HS2_SungB4:HS2_SungB3"/>
+			<Stargate from="HS2_SungB4:HS2_SungB5"	to="HS2_SungB5:HS2_SungB4"/>
+			;AB junctions
+			<Stargate from="HS2_SungA1:HS2_SungB1"	to="HS2_SungB1:HS2_SungA1"/>
+			<Stargate from="HS2_SungA4:HS2_SungB5"	to="HS2_SungB5:HS2_SungA4"/>
+			<!-- connect to mainline topology here -->
+			;C8
+			<Stargate from="HS2_SungA1:C8"	to="C8:HS2_SungA1"/>
+			;C9 jiangs star
+			<Stargate from="HS2_SungA3:C9"	to="C9:HS2_SungA3"/>
+		</NodeGroup>
+
+		<!-- A (inner) segment -->
+
+		<Node ID="HS2_SungA1" x="-218" y="297"	initialState="positionKnown">
+			<System 
+				name=			"SungA1"
+				level=			"6"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungA2" x="-242" y="277"	initialState="positionKnown">
+			<System 
+				name=			"SungA2"
+				level=			"6"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungA3" x="-264" y="256"	initialState="positionKnown">
+			<System 
+				name=			"SungA3"
+				level=			"6"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungA4" x="-289" y="228"	initialState="positionKnown">
+			<System 
+				name=			"SungA4"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungA5" x="-294" y="201"	initialState="positionKnown">
+			<System 
+				name=			"SungA5"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungA6" x="-296" y="181"	initialState="positionKnown">
+			<System 
+				name=			"SungA6"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+
+		<!-- B (outer) segment -->
+		<Node ID="HS2_SungB1" x="-239" y="308"	initialState="positionKnown">
+			<System 
+				name=			"SungB1"
+				level=			"6"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungB2" x="-260" y="288"	initialState="positionKnown">
+			<System 
+				name=			"SungB2"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungB3" x="-280" y="270"	initialState="positionKnown">
+			<System 
+				name=			"SungB3"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungB4" x="-302" y="240"	initialState="positionKnown">
+			<System 
+				name=			"SungB4"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_SungB5" x="-309" y="212"	initialState="positionKnown">
+			<System 
+				name=			"SungB5"
+				level=			"7"
+				attributes=		"humanSpace, ungoverned, sungSpace"
+				>
+				<System UNID="&ssEarthSpaceVolcanic;"/>
+			</System>
+		</Node>
+		
+	</SystemMap>
+
+	<!-- Ringer/Teraton Space Systems -->
+	<SystemMap UNID="&HS2_smRingerSpace;"
+			displayOn="&smHumanSpace;"
+			>
+
+		<NodeGroup ID="HS2_RingerSpace">
+			<!-- connections between our own systems -->
+			;primary segment
+			<Stargate from="HS2_Ringer1:HS2_Ringer2"	to="HS2_Ringer2:HS2_Ringer1"/>
+			<Stargate from="HS2_Ringer2:HS2_Ringer3"	to="HS2_Ringer3:HS2_Ringer2"/>
+			<Stargate from="HS2_Ringer3:HS2_Ringer4"	to="HS2_Ringer4:HS2_Ringer3"/>
+			<Stargate from="HS2_Ringer4:HS2_Ringer5"	to="HS2_Ringer5:HS2_Ringer4"/>
+			<Stargate from="HS2_Ringer5:HS2_Ringer6"	to="HS2_Ringer6:HS2_Ringer5"/>
+			<Stargate from="HS2_Ringer6:HS2_Ringer7"	to="HS2_Ringer7:HS2_Ringer6"/>
+			;stub A
+			<Stargate from="HS2_RingerA1:HS2_Ringer2"	to="HS2_Ringer2:HS2_RingerA1"/>
+			<Stargate from="HS2_RingerA1:HS2_RingerA2"	to="HS2_RingerA2:HS2_RingerA1"/>
+			;stub B
+			<Stargate from="HS2_RingerB1:HS2_Ringer3"	to="HS2_Ringer3:HS2_RingerB1"/>
+			;stub C
+			<Stargate from="HS2_RingerC1:HS2_Ringer6"	to="HS2_Ringer6:HS2_RingerC1"/>
+			<!-- connect to mainline topology here -->
+			;A1
+			<Stargate from="HS2_Ringer1:A1"	to="A1:HS2_Ringer1"/>
+			;A2 - to be reinstated into mainline
+			<Stargate from="HS2_Ringer4:A2"	to="A2:HS2_Ringer4"/>
+			;EC Eta Ceti
+			<Stargate from="HS2_Ringer7:EC"	to="EC:HS2_Ringer7"/>
+		</NodeGroup>
+
+		<!-- Main segment -->
+
+		<Node ID="HS2_Ringer1" x="-304" y="160"	initialState="positionKnown">
+			<System 
+				name=			"Ringer1"
+				level=			"7"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Ringer2" x="-309" y="131"	initialState="positionKnown">
+			<System 
+				name=			"Ringer2"
+				level=			"7"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Ringer3" x="-309" y="96"	initialState="positionKnown">
+			<System 
+				name=			"Ringer3"
+				level=			"8"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Ringer4" x="-306" y="65"	initialState="positionKnown">
+			<System 
+				name=			"Ringer4"
+				level=			"7"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Ringer5" x="-324" y="51"	initialState="positionKnown">
+			<System 
+				name=			"Ringer5"
+				level=			"7"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Ringer6" x="-318" y="31"	initialState="positionKnown">
+			<System 
+				name=			"Ringer6"
+				level=			"7"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_Ringer7" x="-300" y="21"	initialState="positionKnown">
+			<System 
+				name=			"Ringer7"
+				level=			"8"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+
+		<!-- Stub A -->
+		<Node ID="HS2_RingerA1" x="-324" y="111"	initialState="positionKnown">
+			<System 
+				name=			"RingerA1"
+				level=			"8"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		<Node ID="HS2_RingerA2" x="-321" y="135"	initialState="positionKnown">
+			<System 
+				name=			"RingerA2"
+				level=			"8"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+
+		<!-- Stub B -->
+		<Node ID="HS2_RingerB1" x="-323" y="80"	initialState="positionKnown">
+			<System 
+				name=			"RingerB1"
+				level=			"8"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+
+		<!-- Stub C -->
+		<Node ID="HS2_RingerC1" x="-300" y="49"	initialState="positionKnown">
+			<System 
+				name=			"RingerC1"
+				level=			"8"
+				attributes=		"humanSpace, outerRealm, ringerSpace"
+				>
+				<System UNID="&ssEarthSpaceStandard;"/>
+			</System>
+		</Node>
+		
+	</SystemMap>
+
+
+</TranscendenceModule>

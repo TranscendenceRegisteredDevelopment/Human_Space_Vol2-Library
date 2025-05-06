@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+<!--
+#########################
+###      HEADER       ###
+#########################
+-->
+
+
+	<!-- Topology Creator-->
+	
+	<SystemMap UNID="&HS2_smTopology;"
+		displayOn="&smHumanSpace;"
+		>
+
+		<Uses unid="&HS2_smCharonCWSpace;"/>
+
+		<TopologyCreator>
+			<Node ID="HS2_CharonCWSpace"/>
+		</TopologyCreator>
+	</SystemMap>
+
+</TranscendenceModule>

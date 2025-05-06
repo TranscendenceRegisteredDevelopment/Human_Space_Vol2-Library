@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceLibrary
+	[
+	<!ENTITY HS2_unidHS2Library						"0x00A00000">
+	
+	<!-- LIB COVER 0FFF -->
+	
+	<!ENTITY HS2_rsHS2LibCover						"0x00A00FFF">
+	
+
+<!-- Images 1000-2FFF -->
+
+	<!-- ARES	 				*000-*01F-->
+	<!-- CENTAURI 				*000-*01F-->
+	<!-- CHARON 				*000-*01F-->
+	<!-- COMMONWEALTH 			*000-*01F-->
+	<!-- DWARG 					*000-*01F-->
+	<!-- CH - BUSHIDO 			*000-*01F-->
+	<!-- CH - EARTH INDUSTRIES 	*000-*01F-->
+	<!-- CH - KARTAL 			*000-*01F-->
+	<!-- CH - MAKAYEV 			*000-*01F-->
+	<!-- CH - NAMI 				*000-*01F-->
+	<!-- CH - PACIFIC DEFENSE 	*000-*01F-->
+	<!-- CH - RASIERMESSER 		*000-*01F-->
+	<!-- CH - TAIKON 			*000-*01F-->
+	<!-- RINGERS 				*000-*01F-->
+	<!-- SALVAGER NOMADS 		*000-*01F-->
+	<!-- TERATONS 				*000-*01F-->
+	<!-- URAK 					*000-*01F-->
+	
+	<!-- GENERIC CIVILIAN *E00-*EFF -->
+	
+	<!-- SPACE & MISC *F00-*FFF -->
+
+<!-- Sounds 3000-3FFF-->
+
+<!-- Objects and Dockscreens 6000-7FFF -->
+
+	<!-- CENTAURI *000-*01F-->
+
+	<!-- GENERIC CIVILIAN *E00-*EFF -->
+	
+	<!-- SPACE & MISC *F00-*FFF -->
+
+<!-- Items 8000-9FFF -->
+
+	<!-- CENTAURI *000-*01F-->
+
+	<!-- GENERIC CIVILIAN *E00-*EFF -->
+	
+	<!-- SPACE & MISC *F00-*FFF -->
+
+<!-- Systems & Topology D000 - DFFF -->
+
+	<!-- Systems D000-D7FF -->
+
+		<!-- Static System Types D000-D1FF-->
+	
+		<!-- Random System Types D200-D2FF-->
+		
+	<!-- Topology D800-D9FF -->
+
+		<!-- Core HS2 Topology Branches -->
+	<!ENTITY HS2_smNewBeyondExtension				"0x00A0D800">
+	<!ENTITY HS2_smUngovernedExtension				"0x00A0D801">
+	<!ENTITY HS2_smOuterRealmExtension				"0x00A0D802">
+	<!ENTITY HS2_smSungSpace						"0x00A0D803">
+	<!ENTITY HS2_smRingerSpace						"0x00A0D804">
+	<!ENTITY HS2_smUrakSpace						"0x00A0D805">
+	<!ENTITY HS2_smCharonCWSpace					"0x00A0D806">
+	
+		<!-- High probability branches -->
+		
+		<!-- Med probability branches -->
+		
+		<!-- Low probability branches -->
+		
+		<!-- Very low probability branches -->
+
+		<!-- Topology Processors -->
+    <!ENTITY HS2_smTopology							"0x00A0D9FF">
+
+	<!-- System Parts Tables DA00-DFFF -->
+
+<!-- Effects and Stuff E000-EFFF -->
+
+	<!-- Projectiles and stuff E000-E3FF -->
+	
+	<!-- Engines E400-E4FF -->
+	
+	<!-- onHit and damage and onFire E700-E9FF -->
+	
+	<!-- Misc EE00-EFFF -->
+	
+
+<!-- MISC F000-FFFF -->
+	
+	<!-- Sovereigns F000-F0FF -->
+	
+	<!-- Misc Dockscreens F100-F2FF -->
+	
+	<!-- MISSIONS F300-F4FF -->
+	
+	<!-- MISC TYPES FF00-FFFF -->
+
+	<!-- EXTERNAL -->
+]>
+
+<TranscendenceLibrary
+	name="Transcendence: Expansion Library Template - Library"
+	credits="Development by:; Arisaya;"
+	UNID="&HS2_unidHS2Library;"
+	release="1"
+	version="1.0.0.0"
+	coverImageID=	"&HS2_rsHS2LibCover;"
+	apiVersion="53">
+	<Image UNID="&HS2_rsHS2LibCover;"	bitmap="resources/images/covers/HS2CoverLibrary.png"/>
+
+<!-- LIBRARIES -->
+	
+	<Library unid="&unidCoreTypesLibrary;"/>
+	<Library unid="&unidRPGLibrary;"/>
+	<Library unid="&unidGalaxyLibrary;"/>
+	<Library unid="&unidHumanSpaceLibrary;"/>
+
+<!-- MODULES -->
+
+	<Modules>
+		<Module filename="HS2_Dockscreens.xml"/>
+		<Module filename="HS2_Effects.xml"/>
+		<Module filename="HS2_EngineEffects.xml"/>
+		<Module filename="HS2_Encounters_Factional.xml"/>
+		<Module filename="HS2_Encounters_Generic.xml"/>
+		<Module filename="HS2_Environments.xml"/>
+		<Module filename="HS2_Explosions.xml"/>
+		<Module filename="HS2_Items_Factional.xml"/>
+		<Module filename="HS2_Items_Generic.xml"/>
+		<Module filename="HS2_Missions_Generic.xml"/>
+		<Module filename="HS2_Overrides.xml"/>
+		<Module filename="HS2_Ships_Factional.xml"/>
+		<Module filename="HS2_Ships_Generic.xml"/>
+		<Module filename="HS2_Ships_Player.xml"/>
+		<Module filename="HS2_Sovereigns.xml"/>
+		<Module filename="HS2_Systems.xml"/>
+		<Module filename="HS2_System_Morphologies.xml"/>
+		<Module filename="HS2_Topology.xml"/>
+	</Modules>
+	
+<!-- TYPES -->
+
+<!--
+#########################
+###     Attributes    ###
+#########################
+-->
+
+<!--
+#########################
+###      Economy      ###
+#########################
+-->
+
+</TranscendenceLibrary>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE TranscendenceExtension
+	[
+	<!ENTITY HS2_unidExtension					    "0x00A0000F">
+	
+	<!-- LIB COVER 0FFF -->
+	
+    <!ENTITY HS2_rsHS2ExtCover						"0x00A00FFE">
+
+	<!-- Libraries -->
+	<!ENTITY HS2_unidHS2Library			        	"0x00A00000">
+
+]>
+
+<TranscendenceExtension
+	name="Human Space Vol 2 - Topology Debug Extension"
+	credits="Arisaya"
+	UNID="&HS2_unidExtension;"
+	release="1"
+	version="1.0.0.0"
+	coverImageID=	"&HS2_rsHS2ExtCover;"
+	apiVersion="53">
+	<Image UNID="&HS2_rsHS2ExtCover;"	bitmap="resources/images/covers/HS2CoverExtension.png"/>
+	
+	<!-- Library to use -->
+	<Library unid="&HS2_unidHS2Library;"/>
+	<Library unid="&unidCoreTypesLibrary;"/>
+	<Library unid="&unidRPGLibrary;"/>
+	<Library unid="&unidGalaxyLibrary;"/>
+	<Library unid="&unidHumanSpaceLibrary;"/>
+	
+	<!-- Modules -->
+
+	<Module filename="HS2_Ext_TopologyGenerator.xml"/>
+
+</TranscendenceExtension>

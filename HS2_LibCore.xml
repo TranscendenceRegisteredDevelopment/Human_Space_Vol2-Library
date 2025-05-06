@@ -112,7 +112,7 @@
 	credits="Development by:; Arisaya;"
 	UNID="&HS2_unidHS2Library;"
 	release="1"
-	version="1.0.0.0"
+	version="0.0.1.0"
 	coverImageID=	"&HS2_rsHS2LibCover;"
 	apiVersion="53">
 	<Image UNID="&HS2_rsHS2LibCover;"	bitmap="resources/images/covers/HS2CoverLibrary.png"/>

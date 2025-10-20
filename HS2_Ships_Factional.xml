@@ -4,9 +4,165 @@
 
 <!--
 #########################
-###      HEADER       ###
+###      FW - REVOLUTION DESIGNS       ###
 #########################
 -->
+
+<!--
+#########################
+###      CH - EARTH INDUSTRIES       ###
+#########################
+-->
+
+	<!-- Hammerhead-class Gunship -->
+
+	<ShipClass UNID="&HS2_scEIHammerheadStock;"
+			manufacturer=		"Earth Industries"
+			class=				"Hammerhead"
+			type=				"gunship"
+			defaultSovereign=	"&svCommonwealth;"
+
+			attributes=			"EI, genericClass, corporate, gunship, commonwealth"
+			inherit=			"&baHumanTechShip;"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"20"
+			mass=				"30"
+			cargoSpace=			"10"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"50"
+			maxDevices=			"6"
+
+			maxArmor=			"heavy"
+			stdArmor=			"light"
+			/>
+
+		<Drive
+			maxSpeed=			"17"
+			thrust=				"250"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"2.0"
+			/>
+
+		<!-- Configuration -->
+
+		<Armor
+			armorID=			"&itUltraLightTitaniumArmor;"
+			count=				"3"
+			/>
+		
+		<Devices>
+			<Device deviceID="&itRecoillessCannon;"		posAngle="0" posRadius="16" posZ="0"/>
+			<Device deviceID="&itAClassDefenseScreen;"/>
+		</Devices>
+
+		<!-- Image and Effects -->
+
+		<Image imageID="&rsHammerheadHD;" imageWidth="50" imageHeight="50" rotationCount="120" rotationColumns="12" viewportRatio="0.003125"/>
+		<HeroImage imageID="&rsHammerheadHero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"		posAngle="180"	posRadius="23"	posZ="0"	rotation="180"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"50"
+			fireRangeAdj=		"50"
+			fireAccuracy=		"80"
+			perception=			"4"
+			
+			combatStyle=		"advanced"
+			/>
+
+	</ShipClass>
+
+	<!-- Hammerhead II-class Gunship -->
+
+	<ShipClass UNID="&HS2_scEIHammerhead-IIStock;"
+			manufacturer=		"Earth Industries"
+			class=				"Hammerhead II"
+			type=				"gunship"
+			defaultSovereign=	"&svCommonwealth;"
+
+			attributes=			"EI, genericClass, corporate, gunship, commonwealth"
+			inherit=			"&baHumanTechShip;"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"20"
+			mass=				"45"
+			cargoSpace=			"10"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"50"
+			maxDevices=			"6"
+
+			maxArmor=			"heavy"
+			stdArmor=			"light"
+			/>
+
+		<Drive
+			maxSpeed=			"18"
+			thrust=				"500"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"2.0"
+			/>
+
+		<!-- Configuration -->
+
+		<Armor
+			armorID=			"&itLightTitaniumArmor;"
+			count=				"3"
+			/>
+		
+		<Devices>
+			<Device deviceID="&itDualRecoillessCannon;"		posAngle="0" posRadius="16" posZ="0"/>
+			<Device deviceID="&itClass1Deflector;"/>
+		</Devices>
+
+		<!-- Treasure -->
+
+		<Items>
+			<Item count="4d6" item="&itHelium3FuelRod;"/>
+		</Items>
+
+		<!-- Image and Effects -->
+
+		<Image imageID="&rsHammerhead2HD;" imageWidth="50" imageHeight="50" rotationCount="120" rotationColumns="12" viewportRatio="0.003125"/>
+		<HeroImage imageID="&rsHammerhead2Hero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"		posAngle="167"	posRadius="24"	posZ="0"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-167"	posRadius="24"	posZ="0"	rotation="180"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"30"
+			fireRangeAdj=		"50"
+			fireAccuracy=		"90"
+			perception=			"4"
+			
+			combatStyle=		"advanced"
+			/>
+
+	</ShipClass>
+	
 
 
 </TranscendenceModule>

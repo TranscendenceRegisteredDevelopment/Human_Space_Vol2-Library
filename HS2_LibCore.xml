@@ -11,23 +11,26 @@
 
 <!-- Images 1000-2FFF -->
 
-	<!-- ARES	 				*000-*01F-->
-	<!-- CENTAURI 				*000-*01F-->
-	<!-- CHARON 				*000-*01F-->
-	<!-- COMMONWEALTH 			*000-*01F-->
-	<!-- DWARG 					*000-*01F-->
-	<!-- CH - BUSHIDO 			*000-*01F-->
-	<!-- CH - EARTH INDUSTRIES 	*000-*01F-->
-	<!-- CH - KARTAL 			*000-*01F-->
-	<!-- CH - MAKAYEV 			*000-*01F-->
-	<!-- CH - NAMI 				*000-*01F-->
-	<!-- CH - PACIFIC DEFENSE 	*000-*01F-->
-	<!-- CH - RASIERMESSER 		*000-*01F-->
-	<!-- CH - TAIKON 			*000-*01F-->
-	<!-- RINGERS 				*000-*01F-->
-	<!-- SALVAGER NOMADS 		*000-*01F-->
-	<!-- TERATONS 				*000-*01F-->
-	<!-- URAK 					*000-*01F-->
+	<!-- FW - REVOLUTION DESIGNS		*000-*01F-->
+
+	<!-- ARES	 						*000-*01F-->
+	<!-- CENTAURI 						*020-*03F-->
+	<!-- CHARON 						*040-*05F-->
+	<!-- COMMONWEALTH 					*060-*07F-->
+	<!-- DWARG 							*080-*09F-->
+	<!-- CH - BUSHIDO 					*0A0-*0BF-->
+	<!-- CH - EARTH INDUSTRIES 			*0C0-*0DF-->
+	<!-- CH - KARTAL 					*0E0-*0FF-->
+	<!-- CH - MAKAYEV 					*100-*11F-->
+	<!-- CH - NAMI 						*120-*13F-->
+	<!-- CH - PACIFIC DEFENSE 			*140-*15F-->
+	<!-- CH - RASIERMESSER 				*160-*17F-->
+	<!-- CH - TAIKON 					*180-*19F-->
+	<!-- RINGERS 						*1A0-*1BF-->
+	<!-- SALVAGER NOMADS 				*1C0-*1DF-->
+	<!-- TERATONS 						*1E0-*1FF-->
+	<!-- URAK 							*200-*21F-->
+	<!-- FW - REVOLUTION DESIGNS		*200-*21F-->
 	
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	
@@ -37,7 +40,12 @@
 
 <!-- Objects and Dockscreens 6000-7FFF -->
 
-	<!-- CENTAURI *000-*01F-->
+	<!-- FW - REVOLUTION DESIGNS		*000-*01F-->
+	<!ENTITY HS2_scRevDesignsEarthzone100Stock		"0x00A06000">
+
+	<!-- EI - EARTH INDUSTRIES			*020-*03F-->
+	<!ENTITY HS2_scEIHammerheadStock				"0x00A06020">
+	<!ENTITY HS2_scEIHammerhead-IIStock				"0x00A06021">
 
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	
@@ -45,7 +53,10 @@
 
 <!-- Items 8000-9FFF -->
 
-	<!-- CENTAURI *000-*01F-->
+	<!-- FW - REVOLUTION DESIGNS		*000-*01F-->
+	<!ENTITY HS2_itRevDesignsReactorUltraLight		"0x00A08000">
+
+	<!-- CH - -->
 
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	

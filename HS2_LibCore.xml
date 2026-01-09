@@ -35,6 +35,7 @@
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	
 	<!-- SPACE & MISC *F00-*FFF -->
+	<!ENTITY HS2_rsHumanSpaceHD						"0x00A02FFF">
 
 <!-- Sounds 3000-3FFF-->
 
@@ -73,23 +74,48 @@
 	<!-- Topology D800-D9FF -->
 
 		<!-- Core HS2 Topology Branches -->
-	<!ENTITY HS2_smNewBeyondExtension				"0x00A0D800">
-	<!ENTITY HS2_smUngovernedExtension				"0x00A0D801">
-	<!ENTITY HS2_smOuterRealmExtension				"0x00A0D802">
-	<!ENTITY HS2_smSungSpace						"0x00A0D803">
-	<!ENTITY HS2_smRingerSpace						"0x00A0D804">
-	<!ENTITY HS2_smUrakSpace						"0x00A0D805">
-	<!ENTITY HS2_smCharonCWSpace					"0x00A0D806">
-	
-		<!-- High probability branches -->
-		
-		<!-- Med probability branches -->
-		
-		<!-- Low probability branches -->
-		
-		<!-- Very low probability branches -->
+			<!-- New Beyond D800-D81F -->
+	<!ENTITY HS2_smNewBeyondCore					"0x00A0D800">
+	<!ENTITY HS2_smNewBeyondExtension				"0x00A0D801">
+	<!ENTITY HS2_smCharonCWSpace					"0x00A0D802">
 
-		<!-- Topology Processors -->
+			<!-- Ungoverned D820-D83F -->
+	<!ENTITY HS2_smUngovernedCore					"0x00A0D820">
+	<!ENTITY HS2_smUngovernedExtension				"0x00A0D821">
+	<!ENTITY HS2_smSungSpace						"0x00A0D822">
+
+			<!-- Outer Realm D840-D85F -->
+	<!ENTITY HS2_smOuterRealmCore					"0x00A0D840">
+	<!ENTITY HS2_smOuterRealmExtension				"0x00A0D841">
+	<!ENTITY HS2_smRingerSpace						"0x00A0D842">
+
+			<!-- Near Stars D860-D87F -->
+			<!-- Near Stars Core & Extension are included in NS2 -->
+	<!ENTITY HS2_smUrakSpace						"0x00A0D860">
+
+			<!-- Void Regions D880-D89F -->
+	
+		<!-- High probability branches D900-D91F -->
+		
+		<!-- Med probability branches D920-D93F -->
+		
+		<!-- Low probability branches D940-D95F-->
+		
+		<!-- Very low probability branches D960-D97F-->
+		
+		<!-- Links D980-D9AF -->
+	<!ENTITY HS2_smCharonLinkHS2					"0x00A0D980">
+	<!ENTITY HS2_smCharonLinkHS1					"0x00A0D981">
+
+		<!-- Map Effects D9B0-D9CF-->
+
+				<!-- Optional HS1 Labels, excluded if any HSR library is loaded -->
+    <!ENTITY HS2_smHS1Labels						"0x00A0D9CF">
+
+		<!-- System Maps D9F0-D9FE -->
+    <!ENTITY HS2_smHumanSpaceMap					"0x00A0D9FE">
+
+		<!-- DEBUG Topology generator D9FF -->
     <!ENTITY HS2_smTopology							"0x00A0D9FF">
 
 	<!-- System Parts Tables DA00-DFFF -->
@@ -116,6 +142,9 @@
 	<!-- MISC TYPES FF00-FFFF -->
 
 	<!-- EXTERNAL -->
+	<!ENTITY HSR_unidHumanSpaceRegions				"0xA0030014">
+	<!ENTITY HSR_CB_unidHumanSpaceRegions			"0xA0030015">
+	<!ENTITY HSR_EUD_unidHumanSpaceRegions			"0xA0030016">
 ]>
 
 <TranscendenceLibrary
@@ -123,9 +152,9 @@
 	credits="Development by:; Arisaya;"
 	UNID="&HS2_unidHS2Library;"
 	release="1"
-	version="0.0.1.0"
+	version="0.0.2.0"
 	coverImageID=	"&HS2_rsHS2LibCover;"
-	apiVersion="53">
+	apiVersion="57">
 	<Image UNID="&HS2_rsHS2LibCover;"	bitmap="resources/images/covers/HS2CoverLibrary.png"/>
 
 <!-- LIBRARIES -->

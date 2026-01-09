@@ -8,5 +8,13 @@
 #########################
 -->
 
+<!--
+#########################
+###      TOPOLOGY       ###
+#########################
+-->
+
+	<!-- This is a placeholder, it will be replaced with a higher res image eventually -->
+	<Image UNID="&HS2_rsHumanSpaceHD;"				inherit="&rsHumanSpace;"/>
 
 </TranscendenceModule>

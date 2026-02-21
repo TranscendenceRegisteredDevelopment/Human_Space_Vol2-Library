@@ -4,6 +4,59 @@
 
 <!--
 #########################
+###      KOROLOV       ###
+#########################
+-->
+
+
+
+<!--
+#########################
+###      COMMONWEALTH       ###
+#########################
+-->
+
+	<!--
+	ShipTableOverride doesnt actually override the table, rather it append the new table to the original table
+	-->
+	<!-- Commonwealth private crafts -->
+
+	<ShipTableOverride unid="&tbCommPrivateCrafts;">
+		<LevelTable>
+			<Ship levelFrequency="uur-- -----" count="1" class="&HS2_scMakayevVoskhodI;" orders="gateOnThreat"/>
+			<Ship levelFrequency="urv-- -----" count="1" class="&HS2_scMakayevVoskhodII;" orders="gateOnThreat"/>
+			<Ship levelFrequency="rrv-- -----" count="1" class="&HS2_scMakayevVoskhodIII;" orders="gateOnThreat"/>
+		</LevelTable>
+	</ShipTableOverride>
+	
+	<!-- Commonwealth random traffic -->
+	
+	<ShipTableOverride unid="&tbCommTraffic;">
+		<LevelTable>
+			<Ship levelFrequency="uur-- -----" count="1" class="&HS2_scMakayevVoskhodI;" orders="gateOnThreat"/>
+			<Ship levelFrequency="urv-- -----" count="1" class="&HS2_scMakayevVoskhodII;" orders="gateOnThreat"/>
+			<Ship levelFrequency="rrv-- -----" count="1" class="&HS2_scMakayevVoskhodIII;" orders="gateOnThreat"/>
+		</LevelTable>
+	</ShipTableOverride>
+
+<!--
+#########################
+###      KOROLOV       ###
+#########################
+-->
+
+
+	<ShipTableOverride unid="&tbKorolovFreighters;">
+		<LevelTable>
+			<Ship levelFrequency="uur-- -----"	class="&HS2_scMakayevVoskhodIKorolov;"	eventHandler="&evKorolovFreighterBehavior;"/>
+			<Ship levelFrequency="uuu-- -----"	class="&HS2_scMakayevVoskhodIIKorolov;"	eventHandler="&evKorolovFreighterBehavior;"/>
+			<Ship levelFrequency="ruu-- -----"	class="&HS2_scMakayevVoskhodIIIKorolov;"	eventHandler="&evKorolovFreighterBehavior;"/>
+		</LevelTable>
+	</ShipTableOverride>
+
+
+<!--
+#########################
 ###      HEADER       ###
 #########################
 -->

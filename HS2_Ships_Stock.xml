@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TranscendenceModule>
+
+<!--
+#########################
+###      FW - REVOLUTION DESIGNS       ###
+#########################
+-->
+
+<!--
+#########################
+###      CH - EARTH INDUSTRIES       ###
+#########################
+-->
+
+	<!-- Hammerhead-class Gunship -->
+
+	<ShipClass UNID="&HS2_scEIHammerheadStock;"
+			manufacturer=		"Earth Industries"
+			class=				"Hammerhead"
+			type=				"gunship"
+			defaultSovereign=	"&svCommonwealth;"
+
+			attributes=			"EI, genericClass, corporate, gunship, commonwealth"
+			inherit=			"&baHumanTechShip;"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"20"
+			mass=				"30"
+			cargoSpace=			"10"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"50"
+			maxDevices=			"6"
+
+			maxArmor=			"heavy"
+			stdArmor=			"light"
+			/>
+
+		<Drive
+			maxSpeed=			"17"
+			thrust=				"250"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"2.0"
+			/>
+
+		<!-- Configuration -->
+
+		<Armor
+			armorID=			"&itUltraLightTitaniumArmor;"
+			count=				"3"
+			/>
+		
+		<Devices>
+			<Device deviceID="&itRecoillessCannon;"		posAngle="0" posRadius="16" posZ="0"/>
+			<Device deviceID="&itAClassDefenseScreen;"/>
+		</Devices>
+
+		<!-- Image and Effects -->
+
+		<Image imageID="&rsHammerheadHD;" imageWidth="50" imageHeight="50" rotationCount="120" rotationColumns="12" viewportRatio="0.003125"/>
+		<HeroImage imageID="&rsHammerheadHero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"		posAngle="180"	posRadius="23"	posZ="0"	rotation="180"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"50"
+			fireRangeAdj=		"50"
+			fireAccuracy=		"80"
+			perception=			"4"
+			
+			combatStyle=		"advanced"
+			/>
+
+	</ShipClass>
+
+	<!-- Hammerhead II-class Gunship -->
+
+	<ShipClass UNID="&HS2_scEIHammerhead-IIStock;"
+			manufacturer=		"Earth Industries"
+			class=				"Hammerhead II"
+			type=				"gunship"
+			defaultSovereign=	"&svCommonwealth;"
+
+			attributes=			"EI, genericClass, corporate, gunship, commonwealth"
+			inherit=			"&baHumanTechShip;"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"20"
+			mass=				"45"
+			cargoSpace=			"10"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"50"
+			maxDevices=			"6"
+
+			maxArmor=			"heavy"
+			stdArmor=			"light"
+			/>
+
+		<Drive
+			maxSpeed=			"18"
+			thrust=				"500"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"18.0"
+			rotationAccel=		"2.0"
+			/>
+
+		<!-- Configuration -->
+
+		<Armor
+			armorID=			"&itLightTitaniumArmor;"
+			count=				"3"
+			/>
+		
+		<Devices>
+			<Device deviceID="&itDualRecoillessCannon;"		posAngle="0" posRadius="16" posZ="0"/>
+			<Device deviceID="&itClass1Deflector;"/>
+		</Devices>
+
+		<!-- Treasure -->
+
+		<Items>
+			<Item count="4d6" item="&itHelium3FuelRod;"/>
+		</Items>
+
+		<!-- Image and Effects -->
+
+		<Image imageID="&rsHammerhead2HD;" imageWidth="50" imageHeight="50" rotationCount="120" rotationColumns="12" viewportRatio="0.003125"/>
+		<HeroImage imageID="&rsHammerhead2Hero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"		posAngle="167"	posRadius="24"	posZ="0"	rotation="180"/>
+			<Effect type="thrustMain"		posAngle="-167"	posRadius="24"	posZ="0"	rotation="180"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireRateAdj=		"30"
+			fireRangeAdj=		"50"
+			fireAccuracy=		"90"
+			perception=			"4"
+			
+			combatStyle=		"advanced"
+			/>
+
+	</ShipClass>
+	
+
+
+<!--
+#########################
+###      CH - MAKAYEV       ###
+#########################
+-->
+	
+	<!-- Level 1: Voskhod I Freighter -->
+
+	<ShipClass UNID="&HS2_scMakayevVoskhodI;"
+			manufacturer=		"Makayev-Energia"
+			class=				"Voskhod I"
+			type=				"freighter"
+			inherit=			"&baHumanTechShip;"
+
+			attributes=			"freighter, genericClass, makayev"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"135"
+			mass=				"3000"
+			cargoSpace=			"38400"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"38400"
+			maxDevices=			"5"
+			maxWeapons=			"2"
+			>
+			<ArmorLimits massClass="ultraLight"		speedAdj="0" />
+			<ArmorLimits massClass="light"			speedAdj="-1" />
+		</Hull>
+
+		<Drive
+			maxSpeed=			"9"
+			thrust=				"5000"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"1.0"
+			rotationAccel=		"0.5"
+			/>
+
+		<DeviceSlots>
+			<DeviceSlot id="main"			criteria="w" posAngle="0" posRadius="57" posZ="0"/>
+			<DeviceSlot id="turret"			criteria="w~l" posAngle="0" posRadius="0" posZ="40"	fireAngle="0" omnidirectional="true">
+				<EnhancementAbilities>
+					<!-- To determine the balance for slots that make
+					non-omni weapons omni/swivel, use the following formula:
+
+					100 + 100 * (Arc/360)^0.5
+
+					speed is a % multiplier to fire rate delay, so values > 100 are debuffs
+					-->
+					<Enhance type=			"&HS2_vtTurretSlotWithNonOmni;"
+							 enhancement=	"-speed:200;"
+							 criteria=		"w -property:omnidirectional;"
+							 />
+				</EnhancementAbilities>
+			</DeviceSlot>
+
+			<DeviceSlot id="cargo"			criteria="c" cannotBeEmpty="true"/>
+			<DeviceSlot id="shipSystems"		criteria="dV +shipSystems"	cannotBeEmpty="true"/>
+		</DeviceSlots>
+
+		<Interior>
+			<Compartment name="interior"
+					hitPoints=	"30"
+					/>
+		</Interior>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itUltraLightTitaniumArmor;"
+			count=				"8"
+			/>
+		
+		<Devices>
+			<Device	slotID="turret"			deviceID="&itLightRecoillessCannon;"/>
+			<Device slotID="cargo"			deviceID="&itCargoHoldExpansion;"/>
+
+			<Device slotID="shipSystems"		deviceID="&vtShipSystems100;"/>
+		</Devices>
+
+		<Items>
+		</Items>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&HS2_rsMakayevVoskhodI;" imageWidth="116" imageHeight="116"	rotationCount="360" rotationColumns="20" viewportRatio="0.2"/>
+		<HeroImage imageID="&HS2_rsMakayevVoskhodIHero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"               posAngle="156"  posRadius="59"  posZ="0"        rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-156" posRadius="59"  posZ="0"        rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-179" posRadius="53"  posZ="26"       rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-179" posRadius="53"  posZ="-26"      rotation="180"  effect="&efMainThrusterLarge;"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			perception=			"4"
+			combatStyle=		"standOff"
+			/>
+		
+		<!-- Text -->
+		
+		<Language>
+			<Text id="core.descLore">
+				The Voskhod I was one of the first heavy freighters introduced
+				with a fusion power plant. With its massive engines, designed
+				to propel twice as much cargo on the Voskhod II which launched
+				alongside the Voskhod I, it was fast for its day, though in
+				modern times it can barely outpace even the aging Antares I.
+
+				It retains some popularity purely because the ships and
+				replacement parts are cheap
+			</Text>
+			<Text id="core.desc">
+				The Voskhod I is an old, barebones heavy freighter. While its faster
+				than its larger siblings, this is a very old and dated hull with
+				limited expansion capabilities.
+			</Text>
+		</Language>
+	</ShipClass>
+	
+	<!-- Level 1: Voskhod II Freighter -->
+
+	<ShipClass UNID="&HS2_scMakayevVoskhodII;"
+			manufacturer=		"Makayev-Energia"
+			class=				"Voskhod II"
+			type=				"freighter"
+			inherit=			"&baHumanTechShip;"
+
+			attributes=			"freighter, genericClass, makayev"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"135"
+			mass=				"5000"
+			cargoSpace=			"76800"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"76800"
+			maxDevices=			"5"
+			maxWeapons=			"2"
+			>
+			<ArmorLimits massClass="ultraLight"		speedAdj="0" />
+			<ArmorLimits massClass="light"			speedAdj="-1" />
+		</Hull>
+
+		<Drive
+			maxSpeed=			"7"
+			thrust=				"5000"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"0.75"
+			rotationAccel=		"0.4"
+			/>
+
+		<DeviceSlots>
+			<DeviceSlot id="main"			criteria="w" posAngle="0" posRadius="69" posZ="0"/>
+			<DeviceSlot id="turret"			criteria="w~l" posAngle="180" posRadius="22" posZ="37"	fireAngle="0" omnidirectional="true">
+				<EnhancementAbilities>
+					<!-- To determine the balance for slots that make
+					non-omni weapons omni/swivel, use the following formula:
+
+					100 + 100 * (Arc/360)^0.5
+
+					speed is a % multiplier to fire rate delay, so values > 100 are debuffs
+					-->
+					<Enhance type=			"&HS2_vtTurretSlotWithNonOmni;"
+							 enhancement=	"-speed:200;"
+							 criteria=		"w -property:omnidirectional;"
+							 />
+				</EnhancementAbilities>
+			</DeviceSlot>
+
+			<DeviceSlot id="cargo"			criteria="c" cannotBeEmpty="true"/>
+			<DeviceSlot id="shipSystems"		criteria="dV +shipSystems"	cannotBeEmpty="true"/>
+		</DeviceSlots>
+
+		<Interior>
+			<Compartment name="interior"
+					hitPoints=	"40"
+					/>
+		</Interior>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itUltraLightTitaniumArmor;"
+			count=				"12"
+			/>
+		
+		<Devices>
+			<Device	slotID="turret"			deviceID="&itLightRecoillessCannon;"/>
+			<Device slotID="cargo"			deviceID="&itCargoHoldExpansion;"/>
+
+			<Device slotID="shipSystems"		deviceID="&vtShipSystems100;"/>
+		</Devices>
+
+		<Items>
+		</Items>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&HS2_rsMakayevVoskhodII;" imageWidth="144" imageHeight="144"	rotationCount="360" rotationColumns="20" viewportRatio="0.2"/>
+		<HeroImage imageID="&HS2_rsMakayevVoskhodIIHero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"               posAngle="163"  posRadius="73"  posZ="0"        rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-163" posRadius="73"  posZ="0"        rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-180" posRadius="71"  posZ="24"       rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-180" posRadius="71"  posZ="-24"      rotation="180"  effect="&efMainThrusterLarge;"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			perception=			"4"
+			combatStyle=		"standOff"
+			/>
+		
+		<!-- Text -->
+		
+		<Language>
+			<Text id="core.descLore">
+				The Voskhod II is the pre-syrtis war ancestor to the Antares I. Designed
+				alongside the Voskhod I, it used the same assembly facilities and parts,
+				merely adding an additional cargo module to the front.
+
+				While the modular construction kept the cost down, it also resulted in
+				less-than-stellar structural integrity as the design grew longer, so
+				Makayev engineers designed the common engine nacelles to help transfer
+				loads from the forward cargo module by canting it at 45&deg; offset.
+			</Text>
+			<Text id="core.desc">
+				The Voskhod II is an old, barebones heavy freighter. It has little in the
+				way to offer in any regard, except for its massive cargo capacity.
+			</Text>
+		</Language>
+	</ShipClass>
+	
+	<!-- Level 1: Voskhod III Freighter -->
+
+	<ShipClass UNID="&HS2_scMakayevVoskhodIII;"
+			manufacturer=		"Makayev-Energia"
+			class=				"Voskhod III"
+			type=				"superfreighter"
+			inherit=			"&baHumanTechShip;"
+
+			attributes=			"freighter, superfreighter, genericClass, makayev"
+			>
+
+		<!-- Hull -->
+
+		<Hull
+			size=				"196"
+			mass=				"7100"
+			cargoSpace=			"115200"
+
+			maxReactorPower=	"10000"
+			maxCargoSpace=		"115200"
+			maxDevices=			"5"
+			maxWeapons=			"2"
+			>
+			<ArmorLimits massClass="ultraLight"		speedAdj="0" />
+			<ArmorLimits massClass="light"			speedAdj="-1" />
+		</Hull>
+
+		<Drive
+			maxSpeed=			"5"
+			thrust=				"5000"
+			/>
+
+		<Maneuver
+			maxRotationRate=	"0.55"
+			rotationAccel=		"0.35"
+			/>
+
+		<DeviceSlots>
+			<DeviceSlot id="main"			criteria="w" posAngle="0" posRadius="90" posZ="0"/>
+			<DeviceSlot id="turret"			criteria="w~l" posAngle="180" posRadius="42" posZ="33"	fireAngle="0" omnidirectional="true">
+				<EnhancementAbilities>
+					<!-- To determine the balance for slots that make
+					non-omni weapons omni/swivel, use the following formula:
+
+					100 + 100 * (Arc/360)^0.5
+
+					speed is a % multiplier to fire rate delay, so values > 100 are debuffs
+					-->
+					<Enhance type=			"&HS2_vtTurretSlotWithNonOmni;"
+							 enhancement=	"-speed:200;"
+							 criteria=		"w -property:omnidirectional;"
+							 />
+				</EnhancementAbilities>
+			</DeviceSlot>
+
+			<DeviceSlot id="cargo"			criteria="c" cannotBeEmpty="true"/>
+			<DeviceSlot id="shipSystems"		criteria="dV +shipSystems"	cannotBeEmpty="true"/>
+		</DeviceSlots>
+
+		<Interior>
+			<Compartment name="interior"
+					hitPoints=	"50"
+					/>
+		</Interior>
+
+		<!-- Configuration -->
+		
+		<Armor
+			armorID=			"&itUltraLightTitaniumArmor;"
+			count=				"16"
+			/>
+		
+		<Devices>
+			<Device	slotID="turret"			deviceID="&itLightRecoillessCannon;"/>
+			<Device slotID="cargo"			deviceID="&itCargoHoldExpansion;"/>
+
+			<Device slotID="shipSystems"		deviceID="&vtShipSystems100;"/>
+		</Devices>
+
+		<Items>
+		</Items>
+
+		<!-- Image and Effects -->
+		
+		<Image imageID="&HS2_rsMakayevVoskhodIII;" imageWidth="190" imageHeight="190"	rotationCount="360" rotationColumns="20" viewportRatio="0.2"/>
+		<HeroImage imageID="&HS2_rsMakayevVoskhodIIIHero;" imageWidth="320" imageHeight="320"/>
+
+		<Effects>
+			<Effect type="thrustMain"               posAngle="167"  posRadius="93"  posZ="0"        rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-167" posRadius="93"  posZ="0"        rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-180" posRadius="89"  posZ="15"       rotation="180"  effect="&efMainThrusterLarge;"/>
+			<Effect type="thrustMain"               posAngle="-180" posRadius="89"  posZ="-15"      rotation="180"  effect="&efMainThrusterLarge;"/>
+		</Effects>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			perception=			"4"
+			combatStyle=		"standOff"
+			/>
+		
+		<!-- Text -->
+		
+		<Language>
+			<Text id="core.descLore">
+				The Voskhod III is the pre-syrtis war ancestor to the Antares III.
+				Unlike its two smaller siblings, the Voskhod III was designed later
+				in order to address the growing need for even more capacity for
+				moving basic supplies and raw materials for the ongoing colonization
+				boom.
+
+				The already weak modular structure was further strained by the addition
+				of another cargo module, so the Voskhod III features additional supports
+				braced on the engine nacelles that help support and stabilize the fore
+				cargo module.
+			</Text>
+			<Text id="core.desc">
+				The Voskhod III is a very slow and ponderous superfreighter, even by
+				superfreighter standards.
+			</Text>
+		</Language>
+	</ShipClass>
+
+<!--
+#########################
+###      CH - NAMI       ###
+#########################
+-->
+
+</TranscendenceModule>

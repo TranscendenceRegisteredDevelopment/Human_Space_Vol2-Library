@@ -9,4 +9,12 @@
 -->
 
 
+	<ItemType UNID="&HS2_vtTurretSlotWithNonOmni;"
+			name=				"Non-omni in Turret Slot"
+			virtual=			"true"
+			level=				"1"
+			>
+		<Image imageID="&HS2_rsMakayevVoskhodIII;" imageWidth="190" imageHeight="190"/>
+	</ItemType>
+
 </TranscendenceModule>

@@ -11,18 +11,79 @@
 
 <!-- Images 1000-2FFF -->
 
-	<!-- FW - REVOLUTION DESIGNS		*000-*01F-->
-
 	<!-- ARES	 						*000-*01F-->
+	
+	<!ENTITY HS2_rsAresBattlecruiser				"0x00A01000">
+	<!ENTITY HS2_rsAresBattlecruiserHero			"0x00A01001">
+	<!ENTITY HS2_rsAresCorvette						"0x00A01002">
+	<!ENTITY HS2_rsAresCorvetteHero					"0x00A01003">
+	<!ENTITY HS2_rsAresMicronuke					"0x00A01004">
+	<!ENTITY HS2_rsAresMicronukeHero				"0x00A01005">
+	<!ENTITY HS2_rsAresWarhammer					"0x00A01006">
+	<!ENTITY HS2_rsAresWarhammerHero				"0x00A01007">
+
 	<!-- CENTAURI 						*020-*03F-->
 	<!-- CHARON 						*040-*05F-->
 	<!-- COMMONWEALTH 					*060-*07F-->
 	<!-- DWARG 							*080-*09F-->
 	<!-- CH - BUSHIDO 					*0A0-*0BF-->
 	<!-- CH - EARTH INDUSTRIES 			*0C0-*0DF-->
+	
+		<!--
+		For compatibility reasons (360 vs 120 facings)
+		we are using separate UNIDs for the 360 facing
+		remasters of some of the existing EI ships.
+		-->
+	<!ENTITY HS2_rsEIEI100							"0x00A010C0">
+	<!ENTITY HS2_rsEIEI100Hero						"0x00A010C1">
+	<!ENTITY HS2_rsEIEI200							"0x00A010C2">
+	<!ENTITY HS2_rsEIEI200Hero						"0x00A010C3">
+	<!ENTITY HS2_rsEIEI300							"0x00A010C4">
+	<!ENTITY HS2_rsEIEI300Hero						"0x00A010C5">
+	<!ENTITY HS2_rsEIEI400							"0x00A010C6">
+	<!ENTITY HS2_rsEIEI400Hero						"0x00A010C7">
+	<!ENTITY HS2_rsEIEI500							"0x00A010C8">
+	<!ENTITY HS2_rsEIEI500Hero						"0x00A010C9">
+	<!ENTITY HS2_rsEIEI600							"0x00A010CA">
+	<!ENTITY HS2_rsEIEI600Hero						"0x00A010CB">
+	<!ENTITY HS2_rsEIEI700							"0x00A010CC">
+	<!ENTITY HS2_rsEIEI700Hero						"0x00A010CD">
+	<!ENTITY HS2_rsEIEI800							"0x00A010CE">
+	<!ENTITY HS2_rsEIEI800Hero						"0x00A010CF">
+	<!ENTITY HS2_rsEIEI7000							"0x00A010D0">
+	<!ENTITY HS2_rsEIEI7000Hero						"0x00A010D1">
+	<!ENTITY HS2_rsEIEI50							"0x00A010D2">
+	<!ENTITY HS2_rsEIEI50Hero						"0x00A010D3">
+	<!ENTITY HS2_rsEIEI100A							"0x00A010D4">
+	<!ENTITY HS2_rsEIEI100AHero						"0x00A010D5">
+	<!ENTITY HS2_rsEIEI200A							"0x00A010D6">
+	<!ENTITY HS2_rsEIEI200AHero						"0x00A010D7">
+	<!ENTITY HS2_rsEIEI500A							"0x00A010D8">
+	<!ENTITY HS2_rsEIEI500AHero						"0x00A010D9">
+
 	<!-- CH - KARTAL 					*0E0-*0FF-->
 	<!-- CH - MAKAYEV 					*100-*11F-->
+	
+	<!ENTITY HS2_rsMakayevVoskhodI					"0x00A01100">
+	<!ENTITY HS2_rsMakayevVoskhodIHero				"0x00A01101">
+	<!ENTITY HS2_rsMakayevVoskhodII					"0x00A01102">
+	<!ENTITY HS2_rsMakayevVoskhodIIHero				"0x00A01103">
+	<!ENTITY HS2_rsMakayevVoskhodIII				"0x00A01104">
+	<!ENTITY HS2_rsMakayevVoskhodIIIHero			"0x00A01105">
+
 	<!-- CH - NAMI 						*120-*13F-->
+	
+	<!ENTITY HS2_rsNAMIAgena						"0x00A01120">
+	<!ENTITY HS2_rsNAMIAgenaHero					"0x00A01121">
+	<!ENTITY HS2_rsNAMICentaur						"0x00A01122">
+	<!ENTITY HS2_rsNAMICentaurHero					"0x00A01123">
+	<!ENTITY HS2_rsNAMICygnus						"0x00A01124">
+	<!ENTITY HS2_rsNAMICygnusHero					"0x00A01125">
+	<!ENTITY HS2_rsNAMIGemini						"0x00A01126">
+	<!ENTITY HS2_rsNAMIGeminiHero					"0x00A01127">
+	<!ENTITY HS2_rsNAMITitan						"0x00A01128">
+	<!ENTITY HS2_rsNAMITitanHero					"0x00A01129">
+
 	<!-- CH - PACIFIC DEFENSE 			*140-*15F-->
 	<!-- CH - RASIERMESSER 				*160-*17F-->
 	<!-- CH - TAIKON 					*180-*19F-->
@@ -30,7 +91,13 @@
 	<!-- SALVAGER NOMADS 				*1C0-*1DF-->
 	<!-- TERATONS 						*1E0-*1FF-->
 	<!-- URAK 							*200-*21F-->
-	<!-- FW - REVOLUTION DESIGNS		*200-*21F-->
+	<!-- FW - REVOLUTION DESIGNS		*220-*23F-->
+	<!-- MARAUDERS						*240-*25F-->
+	
+	<!ENTITY HS2_rsLombardMorgan					"0x00A01240">
+	<!ENTITY HS2_rsLombardMorganHero				"0x00A01241">
+
+	<!-- CH - KOROLOV					*260-*27F-->
 	
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	
@@ -39,29 +106,108 @@
 
 <!-- Sounds 3000-3FFF-->
 
-<!-- Objects and Dockscreens 6000-7FFF -->
+<!-- Objects and Dockscreens 4000-6FFF -->
 
-	<!-- FW - REVOLUTION DESIGNS		*000-*01F-->
-	<!ENTITY HS2_scRevDesignsEarthzone100Stock		"0x00A06000">
+	<!-- ARES	 						*000-*01F-->
+	
+	<!ENTITY HS2_scAresBattlecruiser				"0x00A04000">
+	<!ENTITY HS2_scAresCorvette						"0x00A04001">
 
-	<!-- EI - EARTH INDUSTRIES			*020-*03F-->
-	<!ENTITY HS2_scEIHammerheadStock				"0x00A06020">
-	<!ENTITY HS2_scEIHammerhead-IIStock				"0x00A06021">
+	<!-- CENTAURI 						*020-*03F-->
+	<!-- CHARON 						*040-*05F-->
+	<!-- COMMONWEALTH 					*060-*07F-->
+	<!-- DWARG 							*080-*09F-->
+	<!-- CH - BUSHIDO 					*0A0-*0BF-->
+	<!-- CH - EARTH INDUSTRIES 			*0C0-*0DF-->
+
+	<!ENTITY HS2_scEIEI300							"0x00A040C0">
+	<!ENTITY HS2_scEIEI400							"0x00A040C1">
+	<!ENTITY HS2_scEIEI600							"0x00A040C2">
+	<!ENTITY HS2_scEIEI700							"0x00A040C3">
+	<!ENTITY HS2_scEIEI800							"0x00A040C4">
+	<!ENTITY HS2_scEIEI7000							"0x00A040D5">
+	<!ENTITY HS2_scEIEI50							"0x00A040D6">
+	<!ENTITY HS2_scEIEI100A							"0x00A040D7">
+	<!ENTITY HS2_scEIEI200A							"0x00A040D8">
+	<!ENTITY HS2_scEIEI500A							"0x00A040D9">
+
+	<!ENTITY HS2_scEIHammerheadStock				"0x00A040DE">
+	<!ENTITY HS2_scEIHammerhead-IIStock				"0x00A040DF">
+
+	<!-- CH - KARTAL 					*0E0-*0FF-->
+	<!-- CH - MAKAYEV 					*100-*11F-->
+	
+	<!ENTITY HS2_scMakayevVoskhodI					"0x00A04100">
+	<!ENTITY HS2_scMakayevVoskhodII					"0x00A04101">
+	<!ENTITY HS2_scMakayevVoskhodIII				"0x00A04102">
+
+	<!-- CH - NAMI 						*120-*13F-->
+	
+	<!ENTITY HS2_scNAMIAgena						"0x00A04120">
+	<!ENTITY HS2_scNAMICentaur						"0x00A04121">
+	<!ENTITY HS2_scNAMICygnus						"0x00A04122">
+	<!ENTITY HS2_scNAMIGemini						"0x00A04123">
+	<!ENTITY HS2_scNAMITitan						"0x00A04124">
+
+	<!-- CH - PACIFIC DEFENSE 			*140-*15F-->
+	<!-- CH - RASIERMESSER 				*160-*17F-->
+	<!-- CH - TAIKON 					*180-*19F-->
+	<!-- RINGERS 						*1A0-*1BF-->
+	<!-- SALVAGER NOMADS 				*1C0-*1DF-->
+	<!-- TERATONS 						*1E0-*1FF-->
+	<!-- URAK 							*200-*21F-->
+	<!-- FW - REVOLUTION DESIGNS		*220-*23F-->
+
+	<!ENTITY HS2_scRevDesignsEarthzone100Stock		"0x00A04220">
+
+	<!-- MARAUDERS						*240-*25F-->
+	
+	<!ENTITY HS2_scLombardMorgan					"0x00A04240">
+
+	<!-- CH - KOROLOV					*260-*27F-->
+	
+	<!ENTITY HS2_scMakayevVoskhodIKorolov			"0x00A04260">
+	<!ENTITY HS2_scMakayevVoskhodIIKorolov			"0x00A04261">
+	<!ENTITY HS2_scMakayevVoskhodIIIKorolov			"0x00A04262">
 
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	
 	<!-- SPACE & MISC *F00-*FFF -->
 
-<!-- Items 8000-9FFF -->
+<!-- Items 7000-AFFF -->
 
-	<!-- FW - REVOLUTION DESIGNS		*000-*01F-->
-	<!ENTITY HS2_itRevDesignsReactorUltraLight		"0x00A08000">
+	<!-- ARES	 						*000-*01F-->
 
-	<!-- CH - -->
+	<!-- CENTAURI 						*020-*03F-->
+	<!-- CHARON 						*040-*05F-->
+	<!-- COMMONWEALTH 					*060-*07F-->
+	<!-- DWARG 							*080-*09F-->
+	<!-- CH - BUSHIDO 					*0A0-*0BF-->
+	<!-- CH - EARTH INDUSTRIES 			*0C0-*0DF-->
+
+	<!-- CH - KARTAL 					*0E0-*0FF-->
+	<!-- CH - MAKAYEV 					*100-*11F-->
+
+	<!-- CH - NAMI 						*120-*13F-->
+
+	<!-- CH - PACIFIC DEFENSE 			*140-*15F-->
+	<!-- CH - RASIERMESSER 				*160-*17F-->
+	<!-- CH - TAIKON 					*180-*19F-->
+	<!-- RINGERS 						*1A0-*1BF-->
+	<!-- SALVAGER NOMADS 				*1C0-*1DF-->
+	<!-- TERATONS 						*1E0-*1FF-->
+	<!-- URAK 							*200-*21F-->
+	<!-- FW - REVOLUTION DESIGNS		*220-*23F-->
+	<!ENTITY HS2_itRevDesignsReactorUltraLight		"0x00A07220">
+
+	<!-- MARAUDERS						*240-*25F-->
+
+	<!-- CH - KOROLOV					*260-*27F-->
 
 	<!-- GENERIC CIVILIAN *E00-*EFF -->
 	
 	<!-- SPACE & MISC *F00-*FFF -->
+	<!ENTITY HS2_vtTurretSlotWithNonOmni			"0x00A0AFFF"> <!-- temp -->
 
 <!-- Systems & Topology D000 - DFFF -->
 
@@ -174,6 +320,7 @@
 		<Module filename="HS2_Encounters_Generic.xml"/>
 		<Module filename="HS2_Environments.xml"/>
 		<Module filename="HS2_Explosions.xml"/>
+		<Module filename="HS2_Images.xml"/>
 		<Module filename="HS2_Items_Factional.xml"/>
 		<Module filename="HS2_Items_Generic.xml"/>
 		<Module filename="HS2_Missions_Generic.xml"/>
@@ -181,6 +328,7 @@
 		<Module filename="HS2_Ships_Factional.xml"/>
 		<Module filename="HS2_Ships_Generic.xml"/>
 		<Module filename="HS2_Ships_Player.xml"/>
+		<Module filename="HS2_Ships_Stock.xml"/>
 		<Module filename="HS2_Sovereigns.xml"/>
 		<Module filename="HS2_Systems.xml"/>
 		<Module filename="HS2_System_Morphologies.xml"/>

@@ -17,7 +17,7 @@
 
 	<SystemMap UNID="&HS2_smHumanSpaceMap;"
 			name=				"Human Space" 
-			backgroundImage=	"&HS2_rsHumanSpaceHD;"
+			backgroundImage=	"&rsHumanSpace;"
 			backgroundImageScale="200"
 			initialScale=		"200"
 			minScale=			"100"

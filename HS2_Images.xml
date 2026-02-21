@@ -7,6 +7,92 @@
 ###      HEADER       ###
 #########################
 -->
+<!--
+#########################
+###      ARES       ###
+#########################
+-->
+
+	<Image UNID="&HS2_rsAresBattlecruiser;"			bitmap="resources/images/HS2-Ares-Interwar_Battlecruiser.jpg"					noPM="true" bitmask="resources/images/HS2-Ares-Interwar_Battlecruiser-mask.png"/>
+	<Image UNID="&HS2_rsAresBattlecruiserHero;"		bitmap="resources/images/HS2-Ares-Interwar_Battlecruiser_hero.jpg"				noPM="true" bitmask="resources/images/HS2-Ares-Interwar_Battlecruiser_hero-mask.png"/>
+	<Image UNID="&HS2_rsAresCorvette;"				bitmap="resources/images/HS2-Ares-Corvette.jpg"									noPM="true" bitmask="resources/images/HS2-Ares-Corvette-mask.png"/>
+	<Image UNID="&HS2_rsAresCorvetteHero;"			bitmap="resources/images/HS2-Ares-Corvette_hero.jpg"							noPM="true" bitmask="resources/images/HS2-Ares-Corvette_hero-mask.png"/>
+
+	<Image UNID="&HS2_rsAresWarhammer;"				bitmap="resources/images/HS2-Ares-Warhammer.jpg"								noPM="true" bitmask="resources/images/HS2-Ares-Warhammer-mask.png"/>
+	<Image UNID="&HS2_rsAresWarhammerHero;"			bitmap="resources/images/HS2-Ares-Warhammer_hero.jpg"							noPM="true" bitmask="resources/images/HS2-Ares-Warhammer_hero-mask.png"/>
+	<Image UNID="&HS2_rsAresMicronuke;"				bitmap="resources/images/HS2-Ares-Micronuke.jpg"								noPM="true" bitmask="resources/images/HS2-Ares-Micronuke-mask.png"/>
+	<Image UNID="&HS2_rsAresMicronukeHero;"			bitmap="resources/images/HS2-Ares-Micronuke_hero.jpg"							noPM="true" bitmask="resources/images/HS2-Ares-Micronuke_hero-mask.png"/>
+
+
+<!--
+#########################
+###      LOMBARD MARAUDERS       ###
+#########################
+-->
+	<Image UNID="&HS2_rsLombardMorgan;"				bitmap="resources/images/HS2-Lombard_Marauder-Morgan.jpg"						noPM="true" bitmask="resources/images/HS2-Lombard_Marauder-Morgan-mask.png"/>
+	<Image UNID="&HS2_rsLombardMorganHero;"			bitmap="resources/images/HS2-Lombard_Marauder-Morgan_hero.jpg"					noPM="true" bitmask="resources/images/HS2-Lombard_Marauder-Morgan_hero-mask.png"/>
+
+
+<!--
+#########################
+###      EI       ###
+#########################
+-->
+	<Image UNID="&HS2_rsEIEI100;"					bitmap="resources/images/HS2-EI-EI100.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI100-mask.png"/>
+	<Image UNID="&HS2_rsEIEI100Hero;"				bitmap="resources/images/HS2-EI-EI100_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI100_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI200;"					bitmap="resources/images/HS2-EI-EI200.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI200-mask.png"/>
+	<Image UNID="&HS2_rsEIEI200Hero;"				bitmap="resources/images/HS2-EI-EI200_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI200_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI300;"					bitmap="resources/images/HS2-EI-EI300.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI300-mask.png"/>
+	<Image UNID="&HS2_rsEIEI300Hero;"				bitmap="resources/images/HS2-EI-EI300_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI300_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI400;"					bitmap="resources/images/HS2-EI-EI400.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI400-mask.png"/>
+	<Image UNID="&HS2_rsEIEI400Hero;"				bitmap="resources/images/HS2-EI-EI400_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI400_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI500;"					bitmap="resources/images/HS2-EI-EI500.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI500-mask.png"/>
+	<Image UNID="&HS2_rsEIEI500Hero;"				bitmap="resources/images/HS2-EI-EI500_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI500_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI600;"					bitmap="resources/images/HS2-EI-EI600.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI600-mask.png"/>
+	<Image UNID="&HS2_rsEIEI600Hero;"				bitmap="resources/images/HS2-EI-EI600_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI600_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI700;"					bitmap="resources/images/HS2-EI-EI700.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI700-mask.png"/>
+	<Image UNID="&HS2_rsEIEI700Hero;"				bitmap="resources/images/HS2-EI-EI700_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI700_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI800;"					bitmap="resources/images/HS2-EI-EI800.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI800-mask.png"/>
+	<Image UNID="&HS2_rsEIEI800Hero;"				bitmap="resources/images/HS2-EI-EI800_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI800_hero-mask.png"/>
+
+	<Image UNID="&HS2_rsEIEI50;"					bitmap="resources/images/HS2-EI-EI50.jpg"										noPM="true" bitmask="resources/images/HS2-EI-EI50-mask.png"/>
+	<Image UNID="&HS2_rsEIEI50Hero;"				bitmap="resources/images/HS2-EI-EI50_hero.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI50_hero-mask.png"/>
+	
+	<Image UNID="&HS2_rsEIEI100A;"					bitmap="resources/images/HS2-EI-EI100_A.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI100_A-mask.png"/>
+	<Image UNID="&HS2_rsEIEI100AHero;"				bitmap="resources/images/HS2-EI-EI100_A_hero.jpg"								noPM="true" bitmask="resources/images/HS2-EI-EI100_A_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI200A;"					bitmap="resources/images/HS2-EI-EI200_A.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI200_A-mask.png"/>
+	<Image UNID="&HS2_rsEIEI200AHero;"				bitmap="resources/images/HS2-EI-EI200_A_hero.jpg"								noPM="true" bitmask="resources/images/HS2-EI-EI200_A_hero-mask.png"/>
+	<Image UNID="&HS2_rsEIEI500A;"					bitmap="resources/images/HS2-EI-EI500_A.jpg"									noPM="true" bitmask="resources/images/HS2-EI-EI500_A-mask.png"/>
+	<Image UNID="&HS2_rsEIEI500AHero;"				bitmap="resources/images/HS2-EI-EI500_A_hero.jpg"								noPM="true" bitmask="resources/images/HS2-EI-EI500_A_hero-mask.png"/>
+
+<!--
+#########################
+###      MAKAYEV       ###
+#########################
+-->
+	<Image UNID="&HS2_rsMakayevVoskhodI;"				bitmap="resources/images/HS2-Makayev-Voskhod_I.jpg"							noPM="true" bitmask="resources/images/HS2-Makayev-Voskhod_I-mask.png"/>
+	<Image UNID="&HS2_rsMakayevVoskhodIHero;"			bitmap="resources/images/HS2-Makayev-Voskhod_I_hero.jpg"					noPM="true" bitmask="resources/images/HS2-Makayev-Voskhod_I_hero-mask.png"/>
+	<Image UNID="&HS2_rsMakayevVoskhodII;"				bitmap="resources/images/HS2-Makayev-Voskhod_II.jpg"						noPM="true" bitmask="resources/images/HS2-Makayev-Voskhod_II-mask.png"/>
+	<Image UNID="&HS2_rsMakayevVoskhodIIHero;"			bitmap="resources/images/HS2-Makayev-Voskhod_II_hero.jpg"					noPM="true" bitmask="resources/images/HS2-Makayev-Voskhod_II_hero-mask.png"/>
+	<Image UNID="&HS2_rsMakayevVoskhodIII;"				bitmap="resources/images/HS2-Makayev-Voskhod_III.jpg"						noPM="true" bitmask="resources/images/HS2-Makayev-Voskhod_III-mask.png"/>
+	<Image UNID="&HS2_rsMakayevVoskhodIIIHero;"			bitmap="resources/images/HS2-Makayev-Voskhod_III_hero.jpg"					noPM="true" bitmask="resources/images/HS2-Makayev-Voskhod_III_hero-mask.png"/>
+
+<!--
+#########################
+###      NAMI       ###
+#########################
+-->
+
+	<Image UNID="&HS2_rsNAMIAgena;"					bitmap="resources/images/HS2-NAMI-Agena.jpg"										noPM="true" bitmask="resources/images/HS2-NAMI-Agena-mask.png"/>
+	<Image UNID="&HS2_rsNAMIAgenaHero;"				bitmap="resources/images/HS2-NAMI-Agena_hero.jpg"									noPM="true" bitmask="resources/images/HS2-NAMI-Agena_hero-mask.png"/>
+	<Image UNID="&HS2_rsNAMICentaur;"				bitmap="resources/images/HS2-NAMI-Centaur.jpg"										noPM="true" bitmask="resources/images/HS2-NAMI-Centaur-mask.png"/>
+	<Image UNID="&HS2_rsNAMICentaurHero;"			bitmap="resources/images/HS2-NAMI-Centaur_hero.jpg"									noPM="true" bitmask="resources/images/HS2-NAMI-Centaur_hero-mask.png"/>
+	<Image UNID="&HS2_rsNAMICygnus;"				bitmap="resources/images/HS2-NAMI-Cygnus.jpg"										noPM="true" bitmask="resources/images/HS2-NAMI-Cygnus-mask.png"/>
+	<Image UNID="&HS2_rsNAMICygnusHero;"			bitmap="resources/images/HS2-NAMI-Cygnus_hero.jpg"									noPM="true" bitmask="resources/images/HS2-NAMI-Cygnus_hero-mask.png"/>
+	<Image UNID="&HS2_rsNAMIGemini;"				bitmap="resources/images/HS2-NAMI-Gemini.jpg"										noPM="true" bitmask="resources/images/HS2-NAMI-Gemini-mask.png"/>
+	<Image UNID="&HS2_rsNAMIGeminiHero;"			bitmap="resources/images/HS2-NAMI-Gemini_hero.jpg"									noPM="true" bitmask="resources/images/HS2-NAMI-Gemini_hero-mask.png"/>
+	<Image UNID="&HS2_rsNAMITitan;"					bitmap="resources/images/HS2-NAMI-Titan.jpg"										noPM="true" bitmask="resources/images/HS2-NAMI-Titan-mask.png"/>
+	<Image UNID="&HS2_rsNAMITitanHero;"				bitmap="resources/images/HS2-NAMI-Titan_hero.jpg"									noPM="true" bitmask="resources/images/HS2-NAMI-Titan_hero-mask.png"/>
 
 <!--
 #########################
@@ -15,6 +101,7 @@
 -->
 
 	<!-- This is a placeholder, it will be replaced with a higher res image eventually -->
-	<Image UNID="&HS2_rsHumanSpaceHD;"				inherit="&rsHumanSpace;"/>
+	<!-- actually doesnt work due to an engine bug. Causes a hang on load -->
+	<!-- <Image UNID="&HS2_rsHumanSpaceHD;"				inherit="&rsHumanSpace;"/> -->
 
 </TranscendenceModule>

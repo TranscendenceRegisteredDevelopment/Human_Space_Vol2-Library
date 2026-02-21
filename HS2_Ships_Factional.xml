@@ -14,155 +14,338 @@
 #########################
 -->
 
-	<!-- Hammerhead-class Gunship -->
+<!--
+#########################
+###      CH - KOROLOV       ###
+#########################
+-->
+	
+	<!-- Level 1: Voskhod I Freighter -->
 
-	<ShipClass UNID="&HS2_scEIHammerheadStock;"
-			manufacturer=		"Earth Industries"
-			class=				"Hammerhead"
-			type=				"gunship"
+	<ShipClass UNID="&HS2_scMakayevVoskhodIKorolov;"
+			manufacturer=		"Makayev-Energia"
+			class=				"Voskhod I"
+			type=				"freighter"
+			inherit=			"&HS2_scMakayevVoskhodI;"
 			defaultSovereign=	"&svCommonwealth;"
 
-			attributes=			"EI, genericClass, corporate, gunship, commonwealth"
-			inherit=			"&baHumanTechShip;"
+			attributes=			"commonwealth, freighter, genericClass, makayev"
 			>
-
-		<!-- Hull -->
-
-		<Hull
-			size=				"20"
-			mass=				"30"
-			cargoSpace=			"10"
-
-			maxReactorPower=	"10000"
-			maxCargoSpace=		"50"
-			maxDevices=			"6"
-
-			maxArmor=			"heavy"
-			stdArmor=			"light"
-			/>
-
-		<Drive
-			maxSpeed=			"17"
-			thrust=				"250"
-			/>
-
-		<Maneuver
-			maxRotationRate=	"18.0"
-			rotationAccel=		"2.0"
-			/>
-
-		<!-- Configuration -->
-
-		<Armor
-			armorID=			"&itUltraLightTitaniumArmor;"
-			count=				"3"
-			/>
 		
 		<Devices>
-			<Device deviceID="&itRecoillessCannon;"		posAngle="0" posRadius="16" posZ="0"/>
-			<Device deviceID="&itAClassDefenseScreen;"/>
+			<Table>
+				<Group chance="25">
+					<Device slotID="turret"	deviceID="&itRecoillessCannon;"/>
+				</Group>
+				<Group chance="20">
+					<Device slotID="turret"	deviceID="&itLightRecoillessCannon;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+				<Group chance="15">
+					<Device slotID="turret"	deviceID="&itLaserCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itTridentCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itHeavyRecoillessCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itDartTurret;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itAlpha1LaserTurret;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+			</Table>
+
+			<Device slotID="cargo"			deviceID="&itCargoHoldExpansion;"/>
+
+			<Table>
+				<Device slotID="shipSystems"	chance="50" deviceID="&vtShipSystems200;"/>
+				<Device slotID="shipSystems"	chance="15" deviceID="&vtShipSystems250;"/>
+				<Device slotID="shipSystems"	chance="10" deviceID="&vtShipSystems125;"/>
+				<Device slotID="shipSystems"	chance="25" deviceID="&vtShipSystems150;"/>
+			</Table>
 		</Devices>
-
-		<!-- Image and Effects -->
-
-		<Image imageID="&rsHammerheadHD;" imageWidth="50" imageHeight="50" rotationCount="120" rotationColumns="12" viewportRatio="0.003125"/>
-		<HeroImage imageID="&rsHammerheadHero;" imageWidth="320" imageHeight="320"/>
-
-		<Effects>
-			<Effect type="thrustMain"		posAngle="180"	posRadius="23"	posZ="0"	rotation="180"/>
-		</Effects>
-		
-		<!-- AI and Behavior -->
-
-		<AISettings
-			fireRateAdj=		"50"
-			fireRangeAdj=		"50"
-			fireAccuracy=		"80"
-			perception=			"4"
-			
-			combatStyle=		"advanced"
-			/>
-
-	</ShipClass>
-
-	<!-- Hammerhead II-class Gunship -->
-
-	<ShipClass UNID="&HS2_scEIHammerhead-IIStock;"
-			manufacturer=		"Earth Industries"
-			class=				"Hammerhead II"
-			type=				"gunship"
-			defaultSovereign=	"&svCommonwealth;"
-
-			attributes=			"EI, genericClass, corporate, gunship, commonwealth"
-			inherit=			"&baHumanTechShip;"
-			>
-
-		<!-- Hull -->
-
-		<Hull
-			size=				"20"
-			mass=				"45"
-			cargoSpace=			"10"
-
-			maxReactorPower=	"10000"
-			maxCargoSpace=		"50"
-			maxDevices=			"6"
-
-			maxArmor=			"heavy"
-			stdArmor=			"light"
-			/>
-
-		<Drive
-			maxSpeed=			"18"
-			thrust=				"500"
-			/>
-
-		<Maneuver
-			maxRotationRate=	"18.0"
-			rotationAccel=		"2.0"
-			/>
-
-		<!-- Configuration -->
-
-		<Armor
-			armorID=			"&itLightTitaniumArmor;"
-			count=				"3"
-			/>
-		
-		<Devices>
-			<Device deviceID="&itDualRecoillessCannon;"		posAngle="0" posRadius="16" posZ="0"/>
-			<Device deviceID="&itClass1Deflector;"/>
-		</Devices>
-
-		<!-- Treasure -->
 
 		<Items>
-			<Item count="4d6" item="&itHelium3FuelRod;"/>
 		</Items>
-
-		<!-- Image and Effects -->
-
-		<Image imageID="&rsHammerhead2HD;" imageWidth="50" imageHeight="50" rotationCount="120" rotationColumns="12" viewportRatio="0.003125"/>
-		<HeroImage imageID="&rsHammerhead2Hero;" imageWidth="320" imageHeight="320"/>
-
-		<Effects>
-			<Effect type="thrustMain"		posAngle="167"	posRadius="24"	posZ="0"	rotation="180"/>
-			<Effect type="thrustMain"		posAngle="-167"	posRadius="24"	posZ="0"	rotation="180"/>
-		</Effects>
 		
 		<!-- AI and Behavior -->
 
 		<AISettings
-			fireRateAdj=		"30"
-			fireRangeAdj=		"50"
 			fireAccuracy=		"90"
 			perception=			"4"
-			
-			combatStyle=		"advanced"
+			combatStyle=		"standOff"
 			/>
+		<!-- Korolov -->
 
+		<Names noArticle="true">Voskhod Heavy 1%0%0</Names>
+
+		<Properties>
+
+			<DynamicGlobal id="korolov.cargoValue.0">
+				(korRandomCargoValue 10000 20000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.1">
+				(korRandomCargoValue 15000 25000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.2">
+				(korRandomCargoValue 20000 35000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.3">
+				(korRandomCargoValue 30000 50000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.4">
+				(korRandomCargoValue 35000 60000)
+			</DynamicGlobal>
+
+			<Global id="korolov.escortRate">
+				350
+			</Global>
+		</Properties>
+		
+		<Events>
+			<OnDestroy>
+				(korOnShipDestroyed)
+			</OnDestroy>
+		</Events>
+		
+		<Language>
+			<Text id="korolov.shipDesc">
+				The Voskhod freighters are the pre-syrtis war ancestors to
+				the Antares series. They are still often in operation because
+				the hulls are cheap and they can still carry substantial
+				amounts of basic goods. Unlike most heavy freighters,
+				pirates almost never send frigates after these ships because
+				most of their cargo has extremely low value.
+
+				The Voskhod I flies well enough and attracts so little attention
+				that even new pilots and apprentices are allowed to escort them.
+			</Text>
+		</Language>
 	</ShipClass>
 	
+	<!-- Level 1: Voskhod II Freighter -->
 
+	<ShipClass UNID="&HS2_scMakayevVoskhodIIKorolov;"
+			manufacturer=		"Makayev-Energia"
+			class=				"Voskhod II"
+			type=				"freighter"
+			inherit=			"&HS2_scMakayevVoskhodII;"
+			defaultSovereign=	"&svCommonwealth;"
+
+			attributes=			"commonwealth, freighter, genericClass, makayev"
+			>
+		
+		<Devices>
+			<Table>
+				<Group chance="25">
+					<Device slotID="turret"	deviceID="&itRecoillessCannon;"/>
+				</Group>
+				<Group chance="20">
+					<Device slotID="turret"	deviceID="&itLightRecoillessCannon;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+				<Group chance="15">
+					<Device slotID="turret"	deviceID="&itLaserCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itTridentCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itHeavyRecoillessCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itDartTurret;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itAlpha1LaserTurret;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+			</Table>
+
+			<Device slotID="cargo"			deviceID="&itCargoHoldExpansion;"/>
+
+			<Table>
+				<Device slotID="shipSystems"	chance="50" deviceID="&vtShipSystems200;"/>
+				<Device slotID="shipSystems"	chance="15" deviceID="&vtShipSystems250;"/>
+				<Device slotID="shipSystems"	chance="10" deviceID="&vtShipSystems125;"/>
+				<Device slotID="shipSystems"	chance="25" deviceID="&vtShipSystems150;"/>
+			</Table>
+		</Devices>
+
+		<Items>
+		</Items>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireAccuracy=		"90"
+			perception=			"4"
+			combatStyle=		"standOff"
+			/>
+		<!-- Korolov -->
+
+		<Names noArticle="true">Voskhod Heavy 2%0%0</Names>
+
+		<Properties>
+
+			<DynamicGlobal id="korolov.cargoValue.2">
+				(korRandomCargoValue 30000 40000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.3">
+				(korRandomCargoValue 40000 55000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.4">
+				(korRandomCargoValue 45000 65000)
+			</DynamicGlobal>
+
+			<Global id="korolov.escortRate">
+				400
+			</Global>
+		</Properties>
+		
+		<Events>
+			<OnDestroy>
+				(korOnShipDestroyed)
+			</OnDestroy>
+		</Events>
+		
+		<Language>
+			<Text id="korolov.shipDesc">
+				The Voskhod freighters are the pre-syrtis war ancestors to
+				the Antares series. They are still often in operation because
+				the hulls are cheap and they can still carry substantial
+				amounts of basic goods. Unlike most heavy freighters,
+				pirates almost never send frigates after these ships because
+				most of their cargo has extremely low value.
+
+				The Voskhod II is sluggish enough that only journeymen pilots
+				may escort Voskhod IIs.
+			</Text>
+		</Language>
+	</ShipClass>
+	
+	<!-- Level 1: Voskhod III Freighter -->
+
+	<ShipClass UNID="&HS2_scMakayevVoskhodIIIKorolov;"
+			manufacturer=		"Makayev-Energia"
+			class=				"Voskhod III"
+			type=				"freighter"
+			inherit=			"&HS2_scMakayevVoskhodIII;"
+			defaultSovereign=	"&svCommonwealth;"
+
+			attributes=			"commonwealth, freighter, genericClass, makayev"
+			>
+		
+		<Devices>
+			<Table>
+				<Group chance="25">
+					<Device slotID="turret"	deviceID="&itRecoillessCannon;"/>
+				</Group>
+				<Group chance="20">
+					<Device slotID="turret"	deviceID="&itLightRecoillessCannon;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+				<Group chance="15">
+					<Device slotID="turret"	deviceID="&itLaserCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itTridentCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itHeavyRecoillessCannon;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itDartTurret;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+				<Group chance="10">
+					<Device slotID="turret"	deviceID="&itAlpha1LaserTurret;"/>
+					<Device item="&itArmorRepairDevice;"/>
+				</Group>
+			</Table>
+
+			<Device slotID="cargo"			deviceID="&itCargoHoldExpansion;"/>
+
+			<Table>
+				<Device slotID="shipSystems"	chance="50" deviceID="&vtShipSystems200;"/>
+				<Device slotID="shipSystems"	chance="15" deviceID="&vtShipSystems250;"/>
+				<Device slotID="shipSystems"	chance="10" deviceID="&vtShipSystems125;"/>
+				<Device slotID="shipSystems"	chance="25" deviceID="&vtShipSystems150;"/>
+			</Table>
+		</Devices>
+
+		<Items>
+		</Items>
+		
+		<!-- AI and Behavior -->
+
+		<AISettings
+			fireAccuracy=		"90"
+			perception=			"4"
+			combatStyle=		"standOff"
+			/>
+		<!-- Korolov -->
+
+		<Names noArticle="true">Voskhod Heavy 3%0%0</Names>
+
+		<Properties>
+			<DynamicGlobal id="korolov.cargoValue.3">
+				(korRandomCargoValue 45000 70000)
+			</DynamicGlobal>
+
+			<DynamicGlobal id="korolov.cargoValue.4">
+				(korRandomCargoValue 55000 80000)
+			</DynamicGlobal>
+
+			<Global id="korolov.escortRate">
+				600
+			</Global>
+		</Properties>
+		
+		<Events>
+			<OnDestroy>
+				(korOnShipDestroyed)
+			</OnDestroy>
+		</Events>
+		
+		<Language>
+			<Text id="korolov.shipDesc">
+				The Voskhod freighters are the pre-syrtis war ancestors to
+				the Antares series. They are still often in operation because
+				the hulls are cheap and they can still carry substantial
+				amounts of basic goods. Unlike most heavy freighters,
+				pirates almost never send frigates after these ships because
+				most of their cargo has extremely low value.
+
+				The Voskhod III is barely tougher than its smaller siblings and
+				so sluggish that pilots must be master rank in order to
+				escort these ships.
+			</Text>
+		</Language>
+	</ShipClass>
+
+<!--
+#########################
+###      CH - MAKAYEV       ###
+#########################
+-->
+
+<!--
+#########################
+###      CH - NAMI       ###
+#########################
+-->
 
 </TranscendenceModule>
